@@ -7,7 +7,7 @@ Windows: [![Build status](https://ci.appveyor.com/api/projects/status/jccn0dum0a
 ```
 $ go get github.com/wookay/aheui-go
 
-$ cat a.go
+$ cat hello.go
 package main
 
 import (
@@ -28,7 +28,7 @@ func main() {
 `))
 }
 
-$ go run a.go
+$ go run hello.go
 Hello, world!
 ```
 
