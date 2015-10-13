@@ -35,7 +35,7 @@ func 아희격자(입력 map[좌표]rune) string {
 
 func 아희(입력 string) string {
 	격자 := map[좌표]rune{}
-	여러줄 := strings.Split(입력, "\n")
+	여러줄 := strings.Split(strings.TrimSpace(입력), "\n")
 	for 행값, 줄 := range 여러줄 {
 		for 렬값, 글자 := range []rune(줄) {
 			격자[좌표{행값, 렬값}] = 글자
