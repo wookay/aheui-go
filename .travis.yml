@@ -10,9 +10,10 @@ env:
 script:
   - go version
   - go get golang.org/x/tools/cmd/cover
+  - go get github.com/axw/gocov/gocov
   - go get github.com/mattn/goveralls
   - go get github.com/stretchr/testify/assert
-  - go test -v -covermode=count -coverprofile=coverage.out *.go
+  - go test -v -covermode=count -coverprofile=coverage.out github.com/wookay/aheui-go
 
 after_success:
   - goveralls -coverprofile=coverage.out -service=travis-ci -repotoken NtrV5eEKgeQCz3F0do52oQVxjKQBxbzoq
